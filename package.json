@@ -13,11 +13,10 @@
     "npm": "2.13.0"
   },
   "scripts": {
-    "init": "npm install",
-    "bower": "bower install"
+    "install": "node node_modules/bower/bin/bower install",
+    "start": "node server/server.js"
   },
   "dependencies": {
-    "del": "~1.1.0",
     "express": "^4.13.0"
   },
   "devDependencies": {
