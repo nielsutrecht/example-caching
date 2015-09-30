@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Angular Caching Example</title>
+        <link href="/js/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Via HTTP</h2>
+                    <weather method="http" city="Utrecht"></weather>
+                    <weather method="http" city="Utrecht"></weather>
+                    <weather method="http" city="Utrecht"></weather>
+
+                    <weather method="http" city="Amsterdam"></weather>
+                    <weather method="http" city="Amsterdam"></weather>
+                    <weather method="http" city="Amsterdam"></weather>
+                </div>
+                <div class="col-md-6">
+                    <h2>Via Resource</h2>
+                    <weather method="resource" city="Utrecht"></weather>
+                    <weather method="resource" city="Utrecht"></weather>
+                    <weather method="resource" city="Utrecht"></weather>
+
+                    <weather method="resource" city="Amsterdam"></weather>
+                    <weather method="resource" city="Amsterdam"></weather>
+                    <weather method="resource" city="Amsterdam"></weather>
+                </div>
+            </div>
+        </div>
+        <script src="js/angular/angular.js"></script>
+        <script src="js/angular-resource/angular-resource.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

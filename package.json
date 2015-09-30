@@ -1,0 +1,26 @@
+{
+  "name": "example-caching",
+  "version": "1.0.0",
+  "description": "Angular caching example",
+  "main": "server/index.js",
+  "private": true,
+  "author": {
+    "name": "Niels Dommerholt",
+    "email": "ndommerholt@gmail.com"
+  },
+  "engines": {
+    "node": "4.1.1",
+    "npm": "2.13.0"
+  },
+  "scripts": {
+    "init": "npm install",
+    "bower": "bower install"
+  },
+  "dependencies": {
+    "del": "~1.1.0",
+    "express": "^4.13.0"
+  },
+  "devDependencies": {
+    "bower": "1.5.3"
+  }
+}
